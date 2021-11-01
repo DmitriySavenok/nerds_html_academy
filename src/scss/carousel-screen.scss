@@ -1,0 +1,62 @@
+.carousel-screen {
+    height: 430px;
+    width: 100%;
+    background-color: $light-gray_background_color;
+}
+
+.carousel-screen h2 {
+    font-size: 55px;
+    width: 530px;
+    height: 115px;
+    margin: 0;
+    line-height: 55px;
+    color: $black_text_color;
+}
+
+.carousel-screen p {
+    font-size: 1em;
+    width: 420px;
+    height: 50px;
+    line-height: 24px;
+    color: $dark_text_color;
+    margin-top: 45px;
+    margin-bottom: 34px;
+}
+
+.slide-content {
+    padding-top: 80px;
+    height: 430px;
+}
+
+.first-slide {
+    background-image: url(../img/nerds-index-slide1.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.second-slide {
+    background-image: url(../img/nerds-index-slide2.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.third-slide {
+    background-image: url(../img/nerds-index-slide3.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+
+/* Slider settings */
+.carousel-screen .slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.carousel-screen .slick-track{
+    display: flex;
+}
+
+.carousel-screen .slick-dots li button:active,
+.carousel-screen .slick-dots li button:focus {
+   outline: none;
+}

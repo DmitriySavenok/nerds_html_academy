@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -490,11 +492,100 @@ template {
   border-bottom: 2px solid #FB565A;
 }
 
+.carousel-screen {
+  height: 430px;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.carousel-screen h2 {
+  font-size: 55px;
+  width: 530px;
+  height: 115px;
+  margin: 0;
+  line-height: 55px;
+  color: #000000;
+}
+
+.carousel-screen p {
+  font-size: 1em;
+  width: 420px;
+  height: 50px;
+  line-height: 24px;
+  color: #283136;
+  margin-top: 45px;
+  margin-bottom: 34px;
+}
+
+.slide-content {
+  padding-top: 80px;
+  height: 430px;
+}
+
+.no-webp .first-slide{
+  background-image: url(../img/nerds-index-slide1.png); }
+
+.first-slide {
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.no-webp .second-slide{
+  background-image: url(../img/nerds-index-slide2.png); }
+
+.second-slide {
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.no-webp .third-slide{
+  background-image: url(../img/nerds-index-slide3.png); }
+
+.third-slide {
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+/* Slider settings */
+
+.carousel-screen .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.carousel-screen .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-screen .slick-dots li button:active,
+.carousel-screen .slick-dots li button:focus {
+  outline: none;
+}
+
 body {
   font-family: 'Roboto-Regular', sans-serif;
 }
 
 .container {
   max-width: 1160px;
+  padding: 0 20px;
   margin: 0 auto;
 }
+
+.button_standart {
+  padding: 1em 52px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #FB565A;
+  text-decoration: none;
+}
+
+.webp .first-slide{ background-image: url(../img/nerds-index-slide1.webp); }
+
+.webp .second-slide{ background-image: url(../img/nerds-index-slide2.webp); }
+
+.webp .third-slide{ background-image: url(../img/nerds-index-slide3.webp); }

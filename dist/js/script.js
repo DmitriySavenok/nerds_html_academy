@@ -15,3 +15,13 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
+// Carousel-screen slider settings
+$(document).ready(function(){
+    $('.carousel-screen__slider').slick({
+        arrows:false,
+        dots:false,
+        autoplay:true,
+        draggable:false
+    });
+});
