@@ -33,4 +33,12 @@ body {
     color: white;
     background-color: $light-red_color;
     text-decoration: none;
+    &:hover {
+        background-color: $red_color;
+        transition-duration: 0.3s;
+    }
+    &:active {
+        background-color: $dark-red_color;
+        transition-duration: 0.3s;
+    }
 }

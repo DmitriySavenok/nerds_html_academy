@@ -46,6 +46,10 @@
     background-repeat: no-repeat;
 }
 
+.slider-item .button_standart:active .slider-item-button-text {
+    opacity: 30%;
+}
+
 
 /* Slider settings */
 .carousel-screen .slick-list {

@@ -546,6 +546,10 @@ template {
   background-repeat: no-repeat;
 }
 
+.slider-item .button_standart:active .slider-item-button-text {
+  opacity: 30%;
+}
+
 /* Slider settings */
 
 .carousel-screen .slick-list {
@@ -582,6 +586,20 @@ body {
   color: white;
   background-color: #FB565A;
   text-decoration: none;
+}
+
+.button_standart:hover {
+  background-color: #E74246;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.button_standart:active {
+  background-color: #D7373B;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .webp .first-slide{ background-image: url(../img/nerds-index-slide1.webp); }
