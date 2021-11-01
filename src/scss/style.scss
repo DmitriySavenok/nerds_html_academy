@@ -15,6 +15,7 @@
 
 @import "header";
 @import "carousel-screen";
+@import "services";
 
 body {
     font-family: 'Roboto-Regular', sans-serif;
@@ -39,6 +40,30 @@ body {
     }
     &:active {
         background-color: $dark-red_color;
+        transition-duration: 0.3s;
+    }
+}
+
+.green-button {
+    background-color: $light-green_color;
+    &:hover {
+        background-color: $green_color;
+        transition-duration: 0.3s;
+    }
+    &:active {
+        background-color: $dark-green_color;
+        transition-duration: 0.3s;
+    }
+}
+
+.yellow-button {
+    background-color: $light-yellow_color;
+    &:hover {
+        background-color: $yellow_color;
+        transition-duration: 0.3s;
+    }
+    &:active {
+        background-color: $dark-yellow_color;
         transition-duration: 0.3s;
     }
 }

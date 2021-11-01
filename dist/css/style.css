@@ -569,6 +569,54 @@ template {
   outline: none;
 }
 
+.services {
+  padding-top: 80px;
+  height: 510px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__item {
+  width: 300px;
+}
+
+.services__item h3 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.services__item p {
+  font-size: 1em;
+  line-height: 24px;
+  color: #283136;
+}
+
+.services__item button {
+  border: none;
+  cursor: pointer;
+}
+
+.web-site-services button:active .web-site-services-button {
+  opacity: 30%;
+}
+
+.application-service button:active .application-service-button {
+  opacity: 30%;
+}
+
+.presentation-service button:active .presentation-service-button {
+  opacity: 30%;
+}
+
 body {
   font-family: 'Roboto-Regular', sans-serif;
 }
@@ -597,6 +645,42 @@ body {
 
 .button_standart:active {
   background-color: #D7373B;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.green-button {
+  background-color: #00CA74;
+}
+
+.green-button:hover {
+  background-color: #00BC6C;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.green-button:active {
+  background-color: #00AA62;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.yellow-button {
+  background-color: #EFC84A;
+}
+
+.yellow-button:hover {
+  background-color: #EAB534;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.yellow-button:active {
+  background-color: #E5A722;
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;

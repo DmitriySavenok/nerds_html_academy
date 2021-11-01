@@ -1,0 +1,45 @@
+.services {
+    padding-top: 80px;
+    height: 510px;
+    border-bottom: 1px solid $light-gray_background_color;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.services__item {
+    width: 300px;
+}
+
+.services__item h3 {
+    color: $black_text_color;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.services__item p {
+    font-size: 1em;
+    line-height: 24px;
+    color: $dark_text_color;
+}
+
+.services__item button {
+    border: none;
+    cursor: pointer;
+}
+
+.web-site-services button:active .web-site-services-button {
+    opacity: 30%;
+}
+
+.application-service button:active .application-service-button {
+    opacity: 30%;
+}
+
+.presentation-service button:active .presentation-service-button {
+    opacity: 30%;
+}
