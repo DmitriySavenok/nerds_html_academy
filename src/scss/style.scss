@@ -74,3 +74,12 @@ body {
         transition-duration: 0.3s;
     }
 }
+
+/* Adaptation */
+
+
+@media (max-width: 665px) {
+    .services__grid, .about__grid {
+        padding: 60px 0;
+    }
+}

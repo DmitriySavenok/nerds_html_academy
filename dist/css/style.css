@@ -438,13 +438,13 @@ template {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
 }
 
 .header__navigation a:hover {
   color: #FB565A;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
 }
 
 .header__navigation a:active {
@@ -577,10 +577,6 @@ template {
           justify-content: space-between;
 }
 
-.services__item {
-  width: 300px;
-}
-
 .services__item h3 {
   color: #000000;
   text-transform: uppercase;
@@ -610,6 +606,8 @@ template {
 .presentation-service button:active .presentation-service-button {
   opacity: 30%;
 }
+
+/* Adaptation */
 
 .about__grid {
   display: grid;
@@ -805,6 +803,67 @@ body {
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
+}
+
+/* Adaptation */
+
+@media (max-width: 968px) {
+  .hide {
+    display: none;
+  }
+
+  .services__item {
+    width: 250px;
+  }
+
+  .services__illustration img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 810px) {
+  .services__item {
+    width: 200px;
+  }
+
+  .services__illustration img {
+    width: 200px;
+  }
+
+  .services__item p {
+    height: 80px;
+  }
+}
+
+@media (max-width: 665px) {
+  .services__grid {
+    display: inherit;
+  }
+
+  .services__item {
+    width: auto;
+    text-align: center;
+    margin-bottom: 3.5em;
+  }
+
+  .services__illustration img {
+    width: auto;
+  }
+
+  .services__item p {
+    height: 50px;
+  }
+
+  .services__grid,
+  .about__grid {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .services__illustration img {
+    width: 280px;
+  }
 }
 
 .webp .first-slide{ background-image: url(../img/nerds-index-slide1.webp); }
