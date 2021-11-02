@@ -4,6 +4,10 @@
     justify-content: space-between;
 }
 
+.about__info {
+    padding-right: 2em;
+}
+
 .about__info h2 {
     font-size: 45px;
     line-height: 45px;
@@ -71,4 +75,64 @@
 .numbers-description {
     line-height: 18px;
     color: $dark_text_color;
+}
+
+/* Adaptation */
+
+@media (max-width: 920px) {
+    .about__grid {
+        display: inherit;
+    }
+
+    .about__info {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .about__info p {
+        margin-bottom: 2em;
+    }
+
+    .about__illustration {
+        text-align: center;
+    }
+
+    .about__numbers-grid {
+        justify-content: space-around;
+    }
+
+    .about__numbers_title {
+        margin-bottom: 2em;
+    }
+
+    .about__numbers-item {
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .about__illustration img {
+        width: 280px;
+    }
+
+    .about__numbers-grid {
+        display: inherit;
+    }
+
+    .about__numbers {
+        margin-top: 2em;
+    }
+
+    .about__numbers_title {
+        margin-bottom: 1em;
+    }
+
+    .numbers-description {
+        margin: 0;
+    }
+
+    .about__numbers-item {
+        margin: 2em;
+    }
 }

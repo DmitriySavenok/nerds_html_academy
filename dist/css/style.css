@@ -619,6 +619,10 @@ template {
           justify-content: space-between;
 }
 
+.about__info {
+  padding-right: 2em;
+}
+
 .about__info h2 {
   font-size: 45px;
   line-height: 45px;
@@ -689,6 +693,8 @@ template {
   line-height: 18px;
   color: #283136;
 }
+
+/* Adaptation */
 
 .partners {
   padding: 60px 0;
@@ -856,6 +862,46 @@ body {
   }
 }
 
+@media (max-width: 920px) {
+  .services__item {
+    text-align: center;
+  }
+
+  .services__item button {
+    width: 100%;
+  }
+
+  .about__grid {
+    display: inherit;
+  }
+
+  .about__info {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .about__info p {
+    margin-bottom: 2em;
+  }
+
+  .about__illustration {
+    text-align: center;
+  }
+
+  .about__numbers-grid {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .about__numbers_title {
+    margin-bottom: 2em;
+  }
+
+  .about__numbers-item {
+    text-align: center;
+  }
+}
+
 @media (max-width: 810px) {
   .header__grid {
     grid-template-columns: auto;
@@ -891,6 +937,7 @@ body {
 
   .services__item {
     width: 200px;
+    text-align: center;
   }
 
   .services__illustration img {
@@ -900,17 +947,32 @@ body {
   .services__item p {
     height: 80px;
   }
+
+  .services__item button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 665px) {
   .services__grid {
-    display: inherit;
+    grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .services__item {
-    width: auto;
+    width: 300px;
     text-align: center;
     margin-bottom: 3.5em;
+  }
+
+  .services__item button {
+    width: 300px;
+  }
+
+  .services__item:last-child {
+    margin-bottom: 0;
   }
 
   .services__illustration img {
@@ -948,6 +1010,32 @@ body {
 
   .header__navigation a {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .about__illustration img {
+    width: 280px;
+  }
+
+  .about__numbers-grid {
+    display: inherit;
+  }
+
+  .about__numbers {
+    margin-top: 2em;
+  }
+
+  .about__numbers_title {
+    margin-bottom: 1em;
+  }
+
+  .numbers-description {
+    margin: 0;
+  }
+
+  .about__numbers-item {
+    margin: 2em;
   }
 }
 
