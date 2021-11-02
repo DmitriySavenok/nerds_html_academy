@@ -64,3 +64,9 @@
 .carousel-screen .slick-dots li button:focus {
    outline: none;
 }
+
+@media (max-width: 1024px) {
+    .slide-content {
+        padding-top: 60px;
+    }
+}

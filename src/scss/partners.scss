@@ -34,12 +34,6 @@
 /* Adaptation */
 
 @media (max-width: 1024px) {
-    .partners__logo img {
-        opacity: 100%;
-    }
-}
-
-@media (max-width: 810px) {
     .partners__grid {
         grid-template-columns: auto auto;
     }
@@ -54,6 +48,10 @@
 
     .partners__logo:last-child, .partners__logo:nth-child(3){
         padding-bottom: 0;
+    }
+
+    .partners__logo img {
+        opacity: 100%;
     }
 }
 

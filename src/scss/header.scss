@@ -78,3 +78,48 @@
 .active-page {
     border-bottom: 2px solid $light-red_color;
 }
+
+/* Adaptation */
+
+@media (max-width: 810px) {
+    .header__grid {
+        grid-template-columns: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header {
+        height: auto;
+        padding-top: 0;
+    }
+
+    .header__logo {
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .shopping-cart img {
+        margin-right: 8px;
+    }
+
+    .header__navigation a {
+        margin-right: 2em;
+    }
+
+    .header__navigation a, .shopping-cart a {
+        height: 52px;
+        line-height: 52px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header__navigation {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1em;
+    }
+
+    .header__navigation a {
+        margin-right: 0;
+    }
+}
