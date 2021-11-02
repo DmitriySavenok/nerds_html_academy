@@ -122,4 +122,9 @@
     .header__navigation a {
         margin-right: 0;
     }
+
+    .header__navigation a, .shopping-cart a {
+        height: 40px;
+        line-height: 40px;
+    }
 }

@@ -65,8 +65,82 @@
    outline: none;
 }
 
+/* Adaptation */
+
+@media (max-width: 1120px) {
+
+    .first-slide, .second-slide, .third-slide {
+        background-size: 60%;
+        background-position: right;
+    }
+}
+
 @media (max-width: 1024px) {
+    .first-slide, .second-slide, .third-slide {
+        background-size: 50%;
+        background-position: bottom right;
+    }
+
+    .carousel-screen {
+        height: auto;
+    }
+
     .slide-content {
-        padding-top: 60px;
+        padding: 60px 0;
+        height: auto;
+    }
+}
+
+@media (max-width: 810px) {
+    .slide-content {
+        text-align: center;
+        height: 400px;
+    }
+
+    .first-slide {
+        background-size: 55%;
+        background-position: bottom center;
+    }
+
+    .second-slide {
+        background-size: 42%;
+        background-position: bottom center;
+    }
+
+    .third-slide {
+        background-size: 45%;
+        background-position: bottom center;
+    }
+
+    .carousel-screen h2 {
+        width: auto;
+        height: auto;
+    }
+    
+    .carousel-screen p {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .first-slide, .second-slide, .third-slide {
+        background-image: none !important;
+    }
+
+    .slide-content {
+        padding-bottom: 4em;
+        height: auto;
+    }
+
+    .slide-content h2 {
+        font-size: 45px;
+        line-height: 40px;
+        height: 160px;
+    }
+
+    .carousel-screen p {
+        margin-top: 2em;
     }
 }
