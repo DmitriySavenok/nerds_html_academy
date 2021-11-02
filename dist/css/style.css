@@ -569,12 +569,6 @@ template {
   outline: none;
 }
 
-.services {
-  padding-top: 80px;
-  height: 510px;
-  border-bottom: 1px solid #EEEEEE;
-}
-
 .services__grid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -617,6 +611,85 @@ template {
   opacity: 30%;
 }
 
+.about__grid {
+  display: grid;
+  grid-template-columns: auto 360px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__info h2 {
+  font-size: 45px;
+  line-height: 45px;
+  margin-top: 0;
+  color: #000000;
+}
+
+.about__info p {
+  font-size: 1em;
+  line-height: 24px;
+  color: #283136;
+  margin-bottom: 52px;
+}
+
+.about__info h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #283136;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.about__info ul {
+  padding-left: 0;
+}
+
+.about__info ul li {
+  list-style: none;
+  line-height: 36px;
+}
+
+.about__info ul li::before {
+  content: "—";
+  color: #FB565A;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.about__numbers_title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__numbers-grid {
+  display: grid;
+  grid-template-columns: 106px 106px 106px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__numbers-item .numbers {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about__numbers-item span {
+  vertical-align: top;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.numbers-description {
+  line-height: 18px;
+  color: #283136;
+}
+
 body {
   font-family: 'Roboto-Regular', sans-serif;
 }
@@ -625,6 +698,12 @@ body {
   max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.services,
+.about {
+  padding: 80px 0;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .button_standart {
