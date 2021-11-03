@@ -30,7 +30,7 @@ body {
     margin: 0 auto;
 }
 
-.services__grid, .about__grid {
+.services__grid, .about__grid, .footer__grid {
     padding: 80px 0;
     border-bottom: 2px solid $light-gray_background_color;
 }
@@ -84,7 +84,7 @@ button {
 /* Adaptation */
 
 @media (max-width: 1024px) {
-    .services__grid, .about__grid {
+    .services__grid, .about__grid, .footer__grid {
         padding: 60px 0;
     }
 }
