@@ -20,7 +20,7 @@ testWebP(function (support) {
 $(document).ready(function(){
     $('.carousel-screen__slider').slick({
         arrows:false,
-        dots:false,
+        dots:true,
         autoplay:true,
         draggable:false
     });
