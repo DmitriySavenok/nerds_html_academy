@@ -45,3 +45,14 @@ $(function() {
         $('body,html').animate({scrollTop:0},800);
     });
 });
+
+
+// Scroll to href script
+$(document).ready(function() {
+    jQuery(".scrollto").click(function () {
+    elementClick = jQuery(this).attr("href")
+    destination = jQuery(elementClick).offset().top - 16;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+    return false;
+    });
+  });

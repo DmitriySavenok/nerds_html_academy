@@ -3032,6 +3032,10 @@ button {
   .carousel-screen p {
     margin-top: 2em;
   }
+
+  .carousel-screen .slick-dots {
+    top: -30px;
+  }
 }
 
 @media (max-width: 420px) {
