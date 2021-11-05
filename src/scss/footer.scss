@@ -147,6 +147,10 @@
         width: auto;
         text-align: center;
     }
+
+    .social-icons-block a {
+        background-color: $light-red_color; 
+    }
 }
 
 @media (max-width: 668px) {

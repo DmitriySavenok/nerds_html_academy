@@ -81,6 +81,66 @@ button {
     }
 }
 
+/* Button to top styles */
+
+.button-to-top {
+    padding: 1em;
+    border-radius: 3px;
+    background-color: #e1e1e1;
+    transition: all ease-out 0.8s;
+    -webkit-transition: all ease-out 0.8s;
+    position: fixed;
+    bottom: 2em; /* отступ кнопки от нижнего края страницы*/
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    &:hover {
+        color: white;
+        background-color: $red_color;
+        transition-duration: 0.5s;
+    }
+}
+
+.button-to-top svg {
+    height: 1em;
+    fill: $red_color;
+    stroke: $red_color;
+}
+
+.button-to-top:hover svg {
+    height: 1em;
+    fill: white;
+    stroke: white;
+}
+
+/* W3C standard
+   сейчас только для Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(251, 86, 90, 1) $light-gray_background_color;
+  }
+  
+  /* для Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    height: auto;
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: $light-gray_background_color;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgba(251, 86, 90, 0.3);
+    &:hover {
+        background: rgba(251, 86, 90, 1);
+    }
+    &:active {
+        background: rgba(215, 55, 59, 1);
+    }
+  }
+
 /* Adaptation */
 
 @media (max-width: 1024px) {

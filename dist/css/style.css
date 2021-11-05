@@ -938,6 +938,83 @@ button {
           transition-duration: 0.3s;
 }
 
+/* Button to top styles */
+
+.button-to-top {
+  padding: 1em;
+  border-radius: 3px;
+  background-color: #e1e1e1;
+  -o-transition: all ease-out 0.8s;
+  transition: all ease-out 0.8s;
+  -webkit-transition: all ease-out 0.8s;
+  position: fixed;
+  bottom: 2em;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+}
+
+.button-to-top:hover {
+  color: white;
+  background-color: #E74246;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button-to-top svg {
+  height: 1em;
+  fill: #E74246;
+  stroke: #E74246;
+}
+
+.button-to-top:hover svg {
+  height: 1em;
+  fill: white;
+  stroke: white;
+}
+
+/* W3C standard
+   сейчас только для Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fb565a #EEEEEE;
+}
+
+/* для Chrome/Edge/Safari */
+
+*::-webkit-scrollbar {
+  height: auto;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #EEEEEE;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(251, 86, 90, 0.3);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #fb565a;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background: #d7373b;
+}
+
 /* Adaptation */
 
 @media (max-width: 1120px) {
@@ -1180,6 +1257,10 @@ button {
   .contact-info p {
     width: auto;
     text-align: center;
+  }
+
+  .social-icons-block a {
+    background-color: #FB565A;
   }
 }
 
