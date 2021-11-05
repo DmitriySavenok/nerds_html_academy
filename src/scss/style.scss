@@ -93,8 +93,6 @@ button {
     padding: 1em;
     border-radius: 3px;
     background-color: #e1e1e1;
-    transition: all ease-out 0.8s;
-    -webkit-transition: all ease-out 0.8s;
     position: fixed;
     bottom: 2em; /* отступ кнопки от нижнего края страницы*/
     right: 20px;
@@ -103,10 +101,11 @@ button {
     align-items: center;
     justify-content: center;
     z-index: 3;
+    transition: all ease-out 0.8s !important;
+    -webkit-transition: all ease-out 0.8s;
     &:hover {
         color: white;
         background-color: $red_color;
-        transition-duration: 0.5s;
     }
 }
 

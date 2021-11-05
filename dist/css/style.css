@@ -2601,9 +2601,6 @@ button {
   padding: 1em;
   border-radius: 3px;
   background-color: #e1e1e1;
-  -o-transition: all ease-out 0.8s;
-  transition: all ease-out 0.8s;
-  -webkit-transition: all ease-out 0.8s;
   position: fixed;
   bottom: 2em;
   /* отступ кнопки от нижнего края страницы*/
@@ -2619,14 +2616,14 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 3;
+  -o-transition: all ease-out 0.8s !important;
+  transition: all ease-out 0.8s !important;
+  -webkit-transition: all ease-out 0.8s;
 }
 
 .button-to-top:hover {
   color: white;
   background-color: #E74246;
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 
 .button-to-top svg {
