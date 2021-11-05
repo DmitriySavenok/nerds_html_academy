@@ -1,11 +1,8 @@
-.partners {
-    padding: 60px 0;
-    border-bottom: 2px solid $light-gray_background_color;
-}
-
 .partners__grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    padding: 60px 0;
+    border-bottom: 2px solid $light-gray_background_color;
 }
 
 .partners__logo {

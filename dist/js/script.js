@@ -24,6 +24,11 @@ $(document).ready(function(){
         autoplay:true,
         draggable:false
     });
+
+    AOS.init({
+        duration: 1500,
+        once: true
+      });
 });
 
 $(function() {
