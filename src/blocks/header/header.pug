@@ -1,6 +1,21 @@
 header.header
   .container
     .header__logo
-      a(href="#")
+      a(href="index.html")
         img(width="160", height="65", src="img/nerds-logo.svg", alt="Логотип")
+    .header__navigation
+      ul
+        li.navigation-item
+          a(href="#", class="navigation-link active-link") Студия
+        li.navigation-item
+          a(href="#", class="navigation-link") Клиенты
+        li.navigation-item
+          a(href="#", class="navigation-link ") Магазин
+        li.navigation-item
+          a(href="#", class="navigation-link") Контакты
+    .header__shopping-cart
+      button.shopping-cart-button
+        img(class="shopping-cart-icon", src="img/icons/cart-icon.svg", alt="Корзина")
+        | Корзина
+
 
