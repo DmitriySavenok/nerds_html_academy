@@ -2,6 +2,10 @@
 @import "fonts/roboto.scss";
 @import "blocks/header/header.scss";
 
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
