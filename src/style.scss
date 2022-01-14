@@ -1,4 +1,10 @@
 @import "variables";
+@import "fonts/roboto.scss";
+@import "blocks/header/header.scss";
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 
 .visually-hidden {
   position: absolute;
@@ -6,4 +12,9 @@
   height: 1px;
   margin: -1px;
   clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }

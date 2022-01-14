@@ -1,0 +1,15 @@
+.header {
+  background-color: $background-color;
+}
+
+.header__logo {
+  display: flex;
+  width: 160px;
+  height: 114px;
+}
+
+.header__logo a {
+  width: 160px;
+  height: 65px;
+  margin-top: auto;
+}
