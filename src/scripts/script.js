@@ -1,17 +1,13 @@
-function testWebP(callback) {
 
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-        callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+// Скрипт определяет какая страница в данный момент открыта,
+// и подчеркивает нужную ссылку в хедере
+function addActiveToHeaderLink() {
+  var bodyElement = document.getElementById("body");
+  var bodyClass = bodyElement.classList.item(0);
+  if (bodyClass === "index-page") {
+    var index = document.getElementById("indexLink");
+    index.classList.add("active-link");
+  }
 }
 
-testWebP(function (support) {
-
-    if (support == true) {
-        document.querySelector('body').classList.add('webp');
-    } else {
-        document.querySelector('body').classList.add('no-webp');
-    }
-});
+addActiveToHeaderLink();
