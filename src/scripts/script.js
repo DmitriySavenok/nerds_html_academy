@@ -8,6 +8,10 @@ function addActiveToHeaderLink() {
     var index = document.getElementById("indexLink");
     index.classList.add("active-link");
   }
+  if (bodyClass === "catalog-page") {
+    var index = document.getElementById("catalogLink");
+    index.classList.add("active-link");
+  }
 }
 
 addActiveToHeaderLink();
