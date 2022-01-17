@@ -108,6 +108,10 @@
   border: none;
 }
 
+.close-icon path {
+  fill: $link-hover-color;
+}
+
 /* Скрытие и отображеие иконок в кнопке открытия навигации в хедере */
 
 .toggle-close .burger-icon {

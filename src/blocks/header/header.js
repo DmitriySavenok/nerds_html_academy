@@ -15,3 +15,16 @@ function addActiveToHeaderLink() {
 }
 
 addActiveToHeaderLink();
+
+function headerButtonToggle() {
+  var button = document.getElementById("headerButtonToggle");
+  var currentClass = button.classList.item(0);
+  if(currentClass == "toggle-close") {
+    button.classList.remove("toggle-close");
+    button.classList.add("toggle-open")
+  }
+  if(currentClass == "toggle-open") {
+    button.classList.remove("toggle-open");
+    button.classList.add("toggle-close")
+  }
+}
