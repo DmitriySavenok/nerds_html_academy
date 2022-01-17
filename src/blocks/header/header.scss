@@ -99,3 +99,55 @@
   content: "";
   pointer-events: none;
 }
+
+.header__button-toggle {
+  display: none;
+}
+
+.header__button-toggle button {
+  border: none;
+}
+
+/* Скрытие и отображеие иконок в кнопке открытия навигации в хедере */
+
+.toggle-close .burger-icon {
+  display: block;
+}
+
+.toggle-close .close-icon {
+  display: none;
+}
+
+.toggle-open .close-icon {
+  display: block;
+}
+
+.toggle-open .burger-icon {
+  display: none;
+}
+
+// Адаптирование
+@media (max-width: $table-width) {
+  .header__logo {
+    display: flex;
+    height: 85px;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header__shopping-cart {
+    display: none;
+  }
+
+  .header .container {
+    grid-template-columns: 160px auto;
+  }
+
+  .header__button-toggle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
