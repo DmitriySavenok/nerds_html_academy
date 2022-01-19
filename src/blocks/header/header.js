@@ -1,30 +1,17 @@
+function headerMenuToggle() {
+  var headerMenu = document.getElementById("header__menu");
+  var headerMenuButton = document.getElementById("header__button-toggle");
+  var menuOpen = headerMenuButton.classList.item(1);
 
-// Скрипт определяет какая страница в данный момент открыта,
-// и подчеркивает нужную ссылку в хедере
-function addActiveToHeaderLink() {
-  var bodyElement = document.getElementById("body");
-  var bodyClass = bodyElement.classList.item(0);
-  if (bodyClass === "index-page") {
-    var index = document.getElementById("indexLink");
-    index.classList.add("active-link");
-  }
-  if (bodyClass === "catalog-page") {
-    var index = document.getElementById("catalogLink");
-    index.classList.add("active-link");
-  }
-}
 
-addActiveToHeaderLink();
+  headerMenu.classList.toggle("open-menu");
 
-function headerButtonToggle() {
-  var button = document.getElementById("headerButtonToggle");
-  var currentClass = button.classList.item(0);
-  if(currentClass == "toggle-close") {
-    button.classList.remove("toggle-close");
-    button.classList.add("toggle-open")
+  if(menuOpen === "menu-icon") {
+    headerMenuButton.classList.remove("menu-icon");
+    headerMenuButton.classList.add("close-icon");
+  } if(menuOpen === "close-icon") {
+    headerMenuButton.classList.remove("close-icon");
+    headerMenuButton.classList.add("menu-icon");
   }
-  if(currentClass == "toggle-open") {
-    button.classList.remove("toggle-open");
-    button.classList.add("toggle-close")
-  }
+
 }
