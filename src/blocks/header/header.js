@@ -12,5 +12,25 @@ function headerMenuToggle() {
     headerMenuButton.classList.remove("close-icon");
     headerMenuButton.classList.add("menu-icon");
   }
-
 }
+
+function headerMenuActiveLink() {
+  var bodyClass = document.getElementById("body").classList.item(0);
+
+  switch(bodyClass) {
+    case 'index-page':
+      var indexLink = document.getElementById("index-link");
+      indexLink.classList.add("active-link");
+      break;
+    case 'catalog-page':
+      var catalogLink = document.getElementById("catalog-link");
+      catalogLink.classList.add("active-link");
+      break;
+    case 'shopping-cart':
+      var shoppingLink = document.getElementById("shopping-cart-button");
+      shoppingLink.classList.add("active-link");
+      break;
+  }
+}
+
+headerMenuActiveLink();
