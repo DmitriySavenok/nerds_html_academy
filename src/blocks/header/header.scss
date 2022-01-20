@@ -140,6 +140,17 @@
 
   .open-menu {
     display: block;
+    animation: open-animation 1s ease-in-out forwards;
+  }
+
+  @keyframes open-animation {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   .navigation-list {
