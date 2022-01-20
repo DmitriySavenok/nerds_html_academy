@@ -147,6 +147,10 @@
     justify-content: flex-start;
   }
 
+  .active-link::before {
+    top: 21px;
+  }
+
   .header__menu {
     display: none;
   }
