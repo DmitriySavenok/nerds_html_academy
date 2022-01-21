@@ -93,6 +93,7 @@
   height: 2px;
   background-color: $link-hover-color;
   content: "";
+  pointer-events: none;
 }
 
 .header__shopping-cart-block {

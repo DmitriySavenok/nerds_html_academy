@@ -16,7 +16,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 95px;
   left: 50%;
   margin: 0 auto;
   padding: 0;
@@ -24,7 +24,37 @@
 }
 
 .slick-dots li {
+  position: relative;
   display: inline-block;
+  margin-right: 17px;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots button {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  background-color: $text-color-light;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-active::before {
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+  content: "";
 }
 
 .slide {
@@ -34,11 +64,20 @@
 }
 
 .slide__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
   padding: 0;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+}
+
+.slide__description {
+  margin-top: 0;
+  margin-bottom: 55px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .slide-1 {
