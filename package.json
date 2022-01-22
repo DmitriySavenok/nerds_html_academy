@@ -20,6 +20,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webpcss": "^1.1.1",
     "sass": "^1.43.5",
     "stylelint": "^14.1.0",
     "stylelint-config-rational-order": "^0.1.2",

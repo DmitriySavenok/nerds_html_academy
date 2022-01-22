@@ -81,19 +81,57 @@
 }
 
 .slide-1 {
+  background-image: url("../img/photo/nerds-index-slide1.png");
   background-image: url("../img/photo/nerds-index-slide1.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .slide-2 {
+  background-image: url("../img/photo/nerds-index-slide2.png");
   background-image: url("../img/photo/nerds-index-slide2.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .slide-3 {
+  background-image: url("../img/photo/nerds-index-slide3.png");
   background-image: url("../img/photo/nerds-index-slide3.webp");
   background-repeat: no-repeat;
   background-position: right;
+}
+
+@media (max-width: $table-width) {
+  .slide {
+    height: 380px;
+    padding-top: 30px;
+    background-position: right bottom;
+    background-size: 70%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slide {
+    height: 420px;
+    padding-top: 20px;
+    text-align: center;
+    background-position: bottom center;
+  }
+
+  .slide-2 {
+    background-size: 60%;
+  }
+
+  .slide__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .slick-dots {
+    bottom: 20px;
+  }
 }
