@@ -1,0 +1,22 @@
+.button-standart {
+  padding: 15px 55px;
+  color: $text-color-light;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $button-background;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-red;
+  }
+
+  &:focus {
+    color: rgba(255 255 255 / 30%);
+    background-color: $button-focus-red;
+  }
+}

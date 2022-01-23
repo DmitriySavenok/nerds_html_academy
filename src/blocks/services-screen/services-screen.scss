@@ -1,0 +1,130 @@
+.services-screen .container {
+  border-bottom: 2px solid #eee;
+}
+
+.services-screen__grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.services-screen__illustation {
+  margin-bottom: 20px;
+}
+
+.services-screen__item-title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-screen__item-description {
+  width: 260px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: $text-color-dark;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button--services {
+  padding: 15px 39px;
+}
+
+.button--app {
+  background-color: $button-background-green;
+
+  &:hover {
+    background-color: $button-hover-green;
+  }
+
+  &:focus {
+    background-color: $button-focus-green;
+  }
+}
+
+.button--presentation {
+  background-color: $button-background-yellow;
+
+  &:hover {
+    background-color: $button-hover-yellow;
+  }
+
+  &:focus {
+    background-color: $button-focus-yellow;
+  }
+}
+
+@media (max-width: 1050px) {
+  .services-screen__grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: $table-width) {
+  .services-screen__grid {
+    display: block;
+  }
+
+  .services-screen__item {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 300px auto;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .services-screen__illustation {
+    height: 146px;
+    margin-bottom: 0;
+  }
+
+  .services-screen__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .services-screen__item-title,
+  .services-screen__item-description {
+    margin-bottom: 0;
+  }
+
+  .button--services {
+    width: 160px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services-screen__item {
+    display: block;
+    text-align: center;
+  }
+
+  .services-screen__illustation {
+    margin-bottom: 20px;
+  }
+
+  .services-screen__illustation img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .services-screen__info {
+    display: block;
+  }
+
+  .services-screen__item-title {
+    margin-bottom: 16px;
+  }
+
+  .services-screen__item-description {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}

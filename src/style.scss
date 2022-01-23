@@ -1,7 +1,9 @@
 @import "variables";
+@import "blocks/button/button.scss";
 @import "fonts/roboto.scss";
 @import "blocks/header/header.scss";
 @import "blocks/slider-screen/slider-screen.scss";
+@import "blocks/services-screen/services-screen.scss";
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -20,20 +22,4 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.button-standart {
-  padding: 15px 55px;
-  color: $text-color-light;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $button-background;
-  border-radius: 3px;
-
-  &:hover {
-    background-color: $link-hover-color;
-  }
 }
