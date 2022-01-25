@@ -1,6 +1,7 @@
 .about-screen__grid {
   display: grid;
-  grid-template-columns: 760px 360px;
+  grid-template-columns: auto 360px;
+  gap: 40px;
   justify-content: space-between;
   padding: 80px 0;
 }
@@ -12,6 +13,12 @@
   font-weight: 500;
   font-size: 45px;
   line-height: 40px;
+}
+
+@media (max-width: 1095px) {
+  .info__title br {
+    display: none;
+  }
 }
 
 .info__legend {
@@ -115,4 +122,67 @@
   color: $text-color-dark;
   font-size: 16px;
   line-height: 19px;
+}
+
+@media (max-width: $table-width) {
+  .about-screen__grid {
+    display: block;
+  }
+
+  .about-screen__info {
+    margin-bottom: 40px;
+  }
+
+  .info__title {
+    margin-bottom: 40px;
+    line-height: normal;
+  }
+
+  .about-screen__numbers {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .numbers__legend-block {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .numbers__blocks {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .numbers__illustation {
+    position: inherit;
+    grid-row: 1 / 2;
+  }
+
+  .numbers__illustation img {
+    position: inherit;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-screen__numbers {
+    display: block;
+    text-align: center;
+  }
+
+  .about-screen__info {
+    text-align: center;
+  }
+
+  .numbers__illustation {
+    margin-bottom: 20px;
+  }
+
+  .numbers__blocks {
+    flex-direction: column;
+    align-items: center;
+  }
 }
