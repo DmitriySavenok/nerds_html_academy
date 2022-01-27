@@ -48,6 +48,7 @@
 
 .header__menu {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: auto 160px;
   align-items: flex-end;
 }
@@ -203,14 +204,12 @@
 }
 
 @media (max-width: $mobile-width) {
-  .header__navigation {
-    display: flex;
-    justify-content: flex-start;
+  .header__grid {
+    gap: 10px 0;
   }
 
-  .navigation-item {
-    display: block;
-    margin-bottom: 16px;
+  .header__navigation {
+    margin-bottom: 20px;
   }
 
   .navigation-item + .navigation-item {
@@ -222,6 +221,11 @@
   }
 
   .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 0;
+    justify-content: space-between;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -232,5 +236,6 @@
 
   .header__shopping-cart-block {
     display: block;
+    text-align: center;
   }
 }
