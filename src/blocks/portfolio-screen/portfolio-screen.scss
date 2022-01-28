@@ -42,6 +42,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .portfolio__link {
+    opacity: 1;
+  }
+}
+
 @media (max-width: $table-width) {
   .portfolio__grid {
     grid-template-rows: 1fr 1fr;
@@ -52,10 +58,6 @@
   .portfolio__item:nth-child(odd)::before {
     display: none;
     content: "";
-  }
-
-  .portfolio__link {
-    opacity: 1;
   }
 }
 
