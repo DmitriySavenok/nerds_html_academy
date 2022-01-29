@@ -1,3 +1,61 @@
 .footer {
   padding: 80px 0;
 }
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 260px auto;
+  gap: 40px;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 81px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+
+  &:hover {
+    background-color: $button-hover-red;
+  }
+}
+
+.fb-link {
+  width: 26px;
+  height: 15px;
+}
+
+.insta-link {
+  width: 12px;
+  height: 26px;
+}
+
+.footer__legend {
+  padding-left: 100px;
+}
+
+.legend-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 4px;
+  color: $text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.legend-offer {
+  margin: 0;
+  color: $text-color-dark;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
