@@ -1,15 +1,20 @@
 footer.footer
   include ../map/map.pug
   .container
+    .footer__address-card
+        .address-info
+          p.studio-name Nёrds design studio
+          a.footer-address 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+          a(class="footer-phone", href="#") тел. +7 (812) 275-75-75
+        button.button-standart.feedback-button Напишите нам
     .footer__grid
       .footer__social-icons
         a(class="social-link", href="#")
-          img(class="vk-link", src="../img/icons/vk-icon.svg", alt="Иконка VK")
+          img(class="vk-icon", src="../img/icons/vk-icon.svg", alt="Иконка VK")
         a(class="social-link", href="#")
-          img(class="fb-link", src="../img/icons/fb-icon.svg", alt="Иконка FB")
+          img(class="fb-icon", src="../img/icons/fb-icon.svg", alt="Иконка FB")
         a(class="social-link", href="#")
-          img(class="insta-link", src="../img/icons/insta-icon.svg", alt="Иконка Instagram")
+          img(class="insta-icon", src="../img/icons/insta-icon.svg", alt="Иконка Instagram")
       .footer__legend
         p.legend-title Давайте дружить, это выгодно!
         p.legend-offer Скидка 10% для друзей из социальных сетей.
-
