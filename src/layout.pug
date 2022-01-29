@@ -28,6 +28,9 @@ html(lang="ru" class="page")
     <link rel="icon" href="img/favicon/android-chrome-512x512.png" type="image/png">
     <link rel="icon" href="img/favicon/android-chrome-192x192.png" type="image/png">
 
+    //- Подключение Карты 2gis
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    script(src="js/map.min.js")
 block content
 body(class=bodyClass, id="body")
   //- Подключение header
@@ -37,6 +40,7 @@ body(class=bodyClass, id="body")
   block main
 
   //- Подключение footer
+  include blocks/footer/footer.pug
 
   //- Подключение общих для всех страниц файлов со скриптами
   script(src="js/jQuery_v3.6.0.min.js")
