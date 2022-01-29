@@ -5,8 +5,8 @@ var map;
           zoom: 17
       });
       var myIcon = DG.icon({
-        iconUrl: '../img/icons/map-marker.png',
-        iconRetinaUrl: '../img/icons/map-marker.png',
+        iconUrl: 'img/icons/map-marker.png',
+        iconRetinaUrl: 'img/icons/map-marker.png',
         iconSize: [231, 190],
         iconAnchor: [50, 190]
       });
