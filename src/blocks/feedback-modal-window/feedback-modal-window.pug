@@ -7,15 +7,15 @@ section.feedback-modal-window.close-window#feedback-modal
         button(class="modal-window__button-close close-icon" id="footer__button-close" type="button" onclick="closeFeedbackModal()")
     .modal-window__form
       <form class="feedback-form">
-        <label class="feedback-form__label" for="user-name">Ваше имя:</label>
-        <input class="feedback-form__input" id="user-name" type="text" name="Имя" placeholder="Имя Фамилия" maxlength="70" required><br>
-
-        <label class="feedback-form__label" for="user-mail">Ваш email:</label>
-        <input class="feedback-form__input" id="user-mail" type="text" name="e-mail или телефон" placeholder="email@example.com " maxlength="70" required><br>
-
-        <label class="feedback-form__label" for="user-message">Текст письма:</label>
-        <textarea type="text" name="Текст сообщения" id="user-message" placeholder="В свободной форме"></textarea><br>
-        <div class="feedback-form__button">
+        .feedback-form__name
+          <label class="feedback-form__label" for="user-name">Ваше имя:</label>
+          <input class="feedback-form__input" id="user-name" type="text" name="Имя" placeholder="Имя Фамилия" maxlength="70" required><br>
+        .feedback-form__mail
+          <label class="feedback-form__label" for="user-mail">Ваш email:</label>
+          <input class="feedback-form__input" id="user-mail" type="text" name="e-mail или телефон" placeholder="email@example.com " maxlength="70" required><br>
+        .feedback-form__message
+          <label class="feedback-form__label" for="user-message">Текст письма:</label>
+          <textarea class="feedback-form__input feedback-form__textarea" type="text" name="Текст сообщения" id="user-message" placeholder="В свободной форме"></textarea><br>
+        .feedback-form__button
           <button type="submit" class="button-standart">Отправить</button>
-        </div>
       </form>
