@@ -6,7 +6,7 @@ footer.footer
           p.studio-name Nёrds design studio
           a.footer-address 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
           a(class="footer-phone", href="#") тел. +7 (812) 275-75-75
-        button.button-standart.feedback-button Напишите нам
+        button(class="button-standart feedback-button", onclick="openFeedbackModal()") Напишите нам
     .footer__grid
       .footer__social-icons
         a(class="social-link", href="#")
@@ -18,3 +18,4 @@ footer.footer
       .footer__legend
         p.legend-title Давайте дружить, это выгодно!
         p.legend-offer Скидка 10% для друзей из социальных сетей.
+  include ../feedback-modal-window/feedback-modal-window.pug
