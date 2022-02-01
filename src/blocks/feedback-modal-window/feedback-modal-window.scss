@@ -19,7 +19,7 @@
 .open-window {
   transform: translateX(0);
   opacity: 1;
-  animation: window-animation-open 1.5s ease-in-out;
+  animation: window-animation-open 1s ease-in-out;
 }
 
 .close-window {
@@ -56,6 +56,22 @@
 @keyframes window-animation-close {
   0% {
     transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX(-1%);
+  }
+
+  30% {
+    transform: translateX(1%);
+  }
+
+  45% {
+    transform: translateX(-3%);
+  }
+
+  60% {
+    transform: translateX(3%);
   }
 
   100% {
@@ -111,6 +127,26 @@
   width: 100%;
   padding: 16px;
   border: 2px solid #d7dcde;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: #b4b9bb;
+  }
+
+  &:focus {
+    border: 1px solid #000;
+    outline: #000 solid 1px;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid $button-hover-red;
+    outline: $button-hover-red solid 1px;
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border: 1px solid $button-hover-green;
+    outline: $button-hover-green solid 1px;
+  }
 }
 
 .feedback-form__name {
