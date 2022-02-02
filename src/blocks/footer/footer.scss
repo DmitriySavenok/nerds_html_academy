@@ -70,6 +70,14 @@
   &:hover {
     background-color: $button-hover-red;
   }
+
+  &:focus {
+    background-color: $button-focus-red;
+  }
+
+  &:focus .social-icon {
+    opacity: 0.3;
+  }
 }
 
 .vk-icon {
@@ -107,6 +115,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+@media (max-width: $table-width) {
+  .social-link {
+    background-color: $button-background;
+  }
 }
 
 @media (max-width: $mobile-width) {
