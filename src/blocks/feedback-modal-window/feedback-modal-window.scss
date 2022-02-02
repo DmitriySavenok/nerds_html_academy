@@ -24,7 +24,7 @@
 
 .close-window {
   transform: translateX(-250%);
-  animation: window-animation-close 1s ease-in-out;
+  animation: window-animation-close 0.7s ease;
 }
 
 @keyframes window-animation-open {
@@ -59,18 +59,10 @@
   }
 
   15% {
-    transform: translateX(-1%);
-  }
-
-  30% {
-    transform: translateX(1%);
-  }
-
-  45% {
     transform: translateX(-3%);
   }
 
-  60% {
+  45% {
     transform: translateX(3%);
   }
 
@@ -167,4 +159,28 @@
 .feedback-form__textarea {
   height: 118px;
   resize: none;
+}
+
+@media (max-width: $table-width) {
+  .feedback-modal-window {
+    width: calc(100% - 40px);
+    max-height: auto;
+    padding: 40px;
+  }
+
+  .modal-window__head {
+    margin-bottom: 30px;
+  }
+
+  .feedback-form {
+    display: block;
+  }
+
+  .feedback-form__input {
+    margin-bottom: 20px;
+  }
+
+  .feedback-form__textarea {
+    margin-bottom: 30px;
+  }
 }
