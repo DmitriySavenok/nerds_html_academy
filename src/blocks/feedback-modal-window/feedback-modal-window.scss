@@ -82,7 +82,7 @@
   margin: 0;
   font-weight: bold;
   font-size: 45px;
-  line-height: auto;
+  line-height: normal;
 }
 
 .modal-window__close-button {
@@ -164,7 +164,6 @@
 @media (max-width: $table-width) {
   .feedback-modal-window {
     width: calc(100% - 40px);
-    max-height: auto;
     padding: 40px;
   }
 
@@ -182,5 +181,16 @@
 
   .feedback-form__textarea {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal-window__title {
+    font-size: 24px;
+  }
+
+  .feedback-modal-window {
+    padding: 16px;
+    text-align: center;
   }
 }
