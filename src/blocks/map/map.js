@@ -5,11 +5,20 @@ var map;
     if (window.innerWidth >= 650) {
       map = DG.map('map', {
       center: [59.939014, 30.320971],
-      zoom: 17});
+      zoom: 17,
+      scrollWheelZoom: false,
+      doubleClicklZoom: false,
+      fullscreenControl: false,
+      zoomControl: false
+      });
     } else {
       map = DG.map('map', {
       center: [59.939352, 30.323414],
-      zoom: 16});
+      zoom: 16,
+      fullscreenControl: false,
+      zoomControl: false,
+      touchZoom: false
+      });
     }
 
     // Собственное изображение маркера на карте
