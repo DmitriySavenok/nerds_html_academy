@@ -121,6 +121,10 @@
   .social-link {
     background-color: $button-background;
   }
+
+  .footer__legend {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -130,6 +134,7 @@
 
   .footer__address-card {
     position: initial;
+    display: block;
     width: auto;
     height: auto;
     padding: 20px;
@@ -157,7 +162,6 @@
   }
 
   .footer__legend {
-    padding-left: 0;
     text-align: center;
   }
 }
