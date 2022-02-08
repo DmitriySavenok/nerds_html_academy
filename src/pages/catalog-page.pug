@@ -5,7 +5,10 @@ block vars
   - var headTitle  = 'Магазин готовых шаблонов'; //- Title
   - var bodyClass = 'catalog-page' //- Классы для body
 
+  - var pageTitle = 'Магазин готовых шаблонов'; //- h1 заголовок
 block content
 
 block main
   main
+    include ../blocks/title-block/title-block.pug
+    include ../blocks/catalog/catalog.pug
