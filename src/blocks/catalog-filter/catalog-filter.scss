@@ -1,11 +1,79 @@
 .catalog-filter__fieldset {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   border: none;
 }
 
 .catalog-filter__legend {
+  margin-bottom: 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+}
+
+.catalog-filter__feature-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter__feature-list li {
+  margin-bottom: 14px;
+  list-style: none;
+}
+
+.catalog-filter__feature-list label {
+  color: $text-color-dark;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.filter-input-checkbox {
+  display: none;
+}
+
+.filter-label-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-label-checkbox::before {
+  flex: 0 0 25px;
+  align-self: flex-start;
+  height: 23px;
+  margin-right: 12px;
+  background: url("../img/icons/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  content: "";
+}
+
+.filter-label-checkbox:hover::before {
+  opacity: 1;
+}
+
+.filter-label-checkbox::after {
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 23px;
+  background: url("../img/icons/checkbox-on.svg");
+  background-repeat: no-repeat;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  content: "";
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.filter-input-checkbox:checked + .filter-label-checkbox::before {
+  background: none;
+}
+
+.filter-input-checkbox:checked + .filter-label-checkbox::after {
+  transform: scale(1);
 }

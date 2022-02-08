@@ -4,5 +4,21 @@
      legend.catalog-filter__legend Стоимость:
     fieldset.catalog-filter__fieldset
      legend.catalog-filter__legend Сетка:
+     ul.catalog-filter__feature-list
+        li
+          input(class="filter-input-checkbox" type="checkbox", name="slider" id="filter-slider" checked)
+          label(class="filter-label-checkbox" for="filter-slider") Слайдер
+        li
+          input(class="filter-input-checkbox" type="checkbox", name="features" id="filter-features")
+          label(class="filter-label-checkbox" for="filter-features") Блок преимуществ
+        li
+          input(class="filter-input-checkbox" type="checkbox", name="news" id="filter-news" checked)
+          label(class="filter-label-checkbox" for="filter-news") Новости
+        li
+          input(class="filter-input-checkbox" type="checkbox", name="gallery" id="filter-gallery")
+          label(class="filter-label-checkbox" for="filter-gallery") Галерея
+        li
+          input(class="filter-input-checkbox" type="checkbox", name="shoping-cart" id="filter-shoping-cart")
+          label(class="filter-label-checkbox" for="filter-shoping-cart") Корзина
     fieldset.catalog-filter__fieldset
      legend.catalog-filter__legend Особенности:
