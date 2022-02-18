@@ -12,6 +12,94 @@
   line-height: 30px;
 }
 
+// Range-slider styles
+.catalog-filter__range-slider-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 14px;
+  background-color: $background-color;
+  border-radius: 3px;
+}
+
+.noUi-target {
+  width: 220px;
+  height: 2px;
+  background: #d7dcdf;
+  border: none;
+}
+
+.noUi-connect {
+  background: $button-background-green;
+}
+
+.noUi-connects {
+  border-radius: 0;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  background: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0 0 0 / 15%);
+  cursor: pointer;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.catalog-filter__range-inputs-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.catalog-filter__range-inputs-block input::-webkit-outer-spin-button,
+.catalog-filter__range-inputs-block input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+/* Firefox */
+.catalog-filter__range-inputs-block input[type="number"] {
+  appearance: textfield;
+}
+
+.catalog-filter__range-input {
+  width: 80px;
+  height: 38px;
+  color: $text-color-dark;
+  text-align: center;
+  background-color: $background-color;
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $text-color-dark;
+    opacity: 1; /* Firefox */
+  }
+
+  &:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 0;
+  }
+}
+
+.catalog-filter__range-input-label span {
+  margin-right: 11px;
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
 .catalog-filter__feature-list,
 .catalog-filter__grid-radio {
   margin: 0;
