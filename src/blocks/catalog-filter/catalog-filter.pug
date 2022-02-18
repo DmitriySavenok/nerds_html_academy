@@ -2,8 +2,29 @@
   form(class="filter" action="https://echo.htmlacademy.ru", method="get")
     fieldset.catalog-filter__fieldset
      legend.catalog-filter__legend Стоимость:
+     .catalog-filter__range-slider-bg
+      .catalog-filter__range-slider#range-slider
+     .catalog-filter__range-inputs-block
+      label.catalog-filter__range-input-label
+        span от
+        input(type="number" name="range-from" min="0" max="15000" placeholder="0" class="catalog-filter__range-input" id="range-input-from")
+      label.catalog-filter__range-input-label
+        span до
+        input(type="number" name="range-to" min="0" max="15000" placeholder="15 000" class="catalog-filter__range-input" id="range-input-to")
     fieldset.catalog-filter__fieldset
      legend.catalog-filter__legend Сетка:
+     ul.catalog-filter__grid-radio
+      li
+        input(class="filter-input-radio" type="radio", name="grid-group" value="adaptive" id="filter-adaptive" checked)
+        label(class="filter-label-radio" for="filter-adaptive") Адаптивная
+      li
+        input(class="filter-input-radio" type="radio", name="grid-group" value="fixed" id="filter-fixed")
+        label(class="filter-label-radio" for="filter-fixed") Фиксированная
+      li
+        input(class="filter-input-radio" type="radio", name="grid-group" value="elastic" id="filter-elastic")
+        label(class="filter-label-radio" for="filter-elastic") Резиновая
+    fieldset.catalog-filter__fieldset
+     legend.catalog-filter__legend Особенности:
      ul.catalog-filter__feature-list
         li
           input(class="filter-input-checkbox" type="checkbox", name="slider" id="filter-slider" checked)
@@ -20,5 +41,4 @@
         li
           input(class="filter-input-checkbox" type="checkbox", name="shoping-cart" id="filter-shoping-cart")
           label(class="filter-label-checkbox" for="filter-shoping-cart") Корзина
-    fieldset.catalog-filter__fieldset
-     legend.catalog-filter__legend Особенности:
+    button(class="button filter-button" type="submit") Показать
