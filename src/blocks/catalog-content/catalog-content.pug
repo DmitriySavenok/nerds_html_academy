@@ -1,0 +1,25 @@
+.catalog-content
+  form(action="#" class="catalog-content__sort-form")
+    legend.catalog-filter__legend Сортировать:
+    ul.catalog-content__sort-list
+      li.catalog-content__sort-item
+        input(class="catalog-content__sort-radio" type="radio", name="sorting-content" value="price" id="sorting-price" checked)
+        label(class="catalog-content__sort-radio-label sorting-type-content" for="sorting-price") По цене
+      li.catalog-content__sort-item
+        input(class="catalog-content__sort-radio" type="radio", name="sorting-content" value="type" id="sorting-type")
+        label(class="catalog-content__sort-radio-label sorting-type-content" for="sorting-type") По типу
+      li.catalog-content__sort-item
+        input(class="catalog-content__sort-radio" type="radio", name="sorting-content" value="name" id="sorting-name")
+        label(class="catalog-content__sort-radio-label sorting-type-content" for="sorting-name") По названию
+      li.catalog-content__sort-item.sorting-arrow
+        input(class="catalog-content__sort-radio" type="radio", name="sorting-directions" value="down" id="sorting-down" checked)
+        label(class="catalog-content__sort-radio-label sorting-directions-down" for="sorting-down")
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" fill="#231F20"/>
+          </svg>
+      li.catalog-content__sort-item.sorting-arrow
+        input(class="catalog-content__sort-radio" type="radio", name="sorting-directions" value="up" id="sorting-up")
+        label(class="catalog-content__sort-radio-label sorting-directions-up" for="sorting-up")
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L11 10L0 10" fill="#231F20"/>
+          </svg>
