@@ -1,0 +1,14 @@
+extends catalog-card-template.pug
+
+block vars
+  - var cardName = 'Team A' //- Название шаблона
+  - var cardLegend = 'Сайт студии по разработке сайтов' //- Описание шаблона
+  - var cardPrice = '15 900' //- Цена шаблона
+
+block imagePath
+  <picture>
+    <source srcset="img/photo/card-images/team-a-card.avif" type="image/avif">
+    <source srcset="img/photo/card-images/team-a-card.webp" type="image/webp">
+    <source srcset="img/photo/card-images/team-a-card.jpg" type="image/jpg">
+    <img src="img/photo/card-images/team-a-card.jpg" alt="Шаблон Команда А">
+  </picture>

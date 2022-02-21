@@ -58,15 +58,25 @@
 }
 
 .catalog-card__name {
+  display: block;
   margin: 0;
   margin-bottom: 12px;
   color: $text-color;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: $button-background;
+  }
+
+  &:focus {
+    color: rgba(0 0 0 / 30%);
+  }
 }
 
 .catalog-card__legend {
-  width: 200px;
+  width: 255px;
   margin: 0;
 }

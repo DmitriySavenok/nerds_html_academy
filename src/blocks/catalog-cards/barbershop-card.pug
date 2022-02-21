@@ -1,0 +1,14 @@
+extends catalog-card-template.pug
+
+block vars
+  - var cardName = 'barbershop' //- Название шаблона
+  - var cardLegend = 'Лэндинг барбершопа' //- Описание шаблона
+  - var cardPrice = '10 500' //- Цена шаблона
+
+block imagePath
+  <picture>
+    <source srcset="img/photo/card-images/barbershop-card.avif" type="image/avif">
+    <source srcset="img/photo/card-images/barbershop-card.webp" type="image/webp">
+    <source srcset="img/photo/card-images/barbershop-card.jpg" type="image/jpg">
+    <img src="img/photo/card-images/barbershop-card.jpg" alt="Шаблон барбершопа">
+  </picture>

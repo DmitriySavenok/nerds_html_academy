@@ -1,0 +1,14 @@
+extends catalog-card-template.pug
+
+block vars
+  - var cardName = 'Kvast' //- Название шаблона
+  - var cardLegend = 'Крафтовая пивоварня' //- Описание шаблона
+  - var cardPrice = '20 900' //- Цена шаблона
+
+block imagePath
+  <picture>
+    <source srcset="img/photo/card-images/kvast-card.avif" type="image/avif">
+    <source srcset="img/photo/card-images/kvast-card.webp" type="image/webp">
+    <source srcset="img/photo/card-images/kvast-card.jpg" type="image/jpg">
+    <img src="img/photo/card-images/kvast-card.jpg" alt="Шаблон Кваст">
+  </picture>

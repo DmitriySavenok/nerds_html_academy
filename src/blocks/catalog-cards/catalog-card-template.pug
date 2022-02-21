@@ -13,7 +13,7 @@ block card
     block imagePath
   .catalog-card__info
     .catalog-card__description
-      p.catalog-card__name #{cardName}
+      a(href="#", class="catalog-card__name") #{cardName}
       p.catalog-card__legend #{cardLegend}
     .catalog-card__button
-      button.button-standart #{cardPrice}Руб.
+      button.button-standart #{cardPrice} ₽
