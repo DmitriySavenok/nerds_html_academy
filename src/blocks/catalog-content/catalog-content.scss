@@ -49,3 +49,9 @@
 .catalog-content__sort-radio:checked + .catalog-content__sort-radio-label {
   opacity: 1;
 }
+
+.catalog-content__cards-grid {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  justify-content: space-between;
+}

@@ -1,0 +1,19 @@
+block vars
+- var cardName; //- Название шаблона
+- var cardLegend; //- Описание шаблона
+- var cardPrice; //- Цена шаблона
+
+block card
+.catalog-card
+  .catalog-card__head
+    .head-circle
+    .head-circle
+    .head-circle
+  .catalog-card__body
+    block imagePath
+  .catalog-card__info
+    .catalog-card__description
+      p.catalog-card__name #{cardName}
+      p.catalog-card__legend #{cardLegend}
+    .catalog-card__button
+      button.button-standart #{cardPrice}Руб.
